@@ -62,7 +62,11 @@ public class ircBot extends PircBot {
         	else
         		sendMessage(channel,"Players ("+ cPlayers +" of "+ etc.getInstance().getPlayerLimit() + "):" + curPlayers);
         }
-        /*else if (message.equalsIgnoreCase("!admins")) {
+        /*
+         * my hacked-in !admins function. just add a variable for defining admin groups
+         * and a variable for response message
+         * 
+         else if (message.equalsIgnoreCase("!admins")) {
         	String curAdmins = "Admins: ";
         	for (Player p : etc.getServer().getPlayerList()) {
       		  if (p != null && (p.isInGroup("admins")||p.isInGroup("srstaff"))) {
@@ -75,7 +79,7 @@ public class ircBot extends PircBot {
       		  }
             }
         	if(curAdmins=="Admins: ")
-        		sendMessage(channel,"No admins online. Find one on #joe.to or #minecraft");
+        		sendMessage(channel,"No admins online.");
         	else
         		sendMessage(channel,curAdmins);
         }*/

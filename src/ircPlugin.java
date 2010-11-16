@@ -83,13 +83,9 @@ public class ircPlugin extends Plugin {
 		else
 			ircDebug=false;
 		goBot=true;
-		bot=new ircBot(ircName,ircMsg,ircCharLim,ircUserColor,ircEcho,ircSeparator,this);
-		//uncomment below to debug 
+		bot=new ircBot(ircName,ircMsg,ircCharLim,ircUserColor,ircEcho,ircSeparator,this); 
 		if(ircDebug)bot.setVerbose(true);
-        //System.out.println("host:"+ircHost);
-        //System.out.println("ircName);
-        //System.out.println(ircChannel);
-		iGotKilled();
+		iGotKilled();//lazy name for a function.
 		
     }
 
