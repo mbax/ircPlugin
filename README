@@ -17,3 +17,8 @@ irc-debug=<false>[Debug messages in console]
 4) Open ircAdmins.txt (the plugin will create it for you) and add users as it describes
 
 5) Say /ircrefresh in-game as an admin (give flag to others if you really want) to refresh the irc admin list
+
+
+Note: This code is licensed under the GPL2 and contains pircbot (GPL2 as well) code (see the bin directory). 
+
+See http://www.jibble.org/licenses/gnu-license.php for details
