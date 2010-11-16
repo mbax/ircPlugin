@@ -3,7 +3,7 @@
  * todo: write better name
  * 
  * An IRC bot. This is the plugin file. 
- * It knows what to do when somebody speaks on the server
+ * It does commands and doesn't answer to anybody
  * 
  * ALSO REQUIRES:
  * irc.properties (put this in the same directory as the mod)
@@ -20,7 +20,7 @@
  *	irc-echo= 
  * 
  * NOTE
- * This code is licensed under the GPL, as it partly uses
+ * This code is licensed under the GPL2, as it partly uses
  * and includes pircbot code
  * See http://www.jibble.org/licenses/gnu-license.php
  * for more information

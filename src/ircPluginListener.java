@@ -1,3 +1,16 @@
+/*
+ * mbaxter's irc bot plugin for hey0's minecraft mod
+ * long title, amazing results?
+ *
+ * This is the listener, it listens.
+ * 
+ * NOTE 
+ * This code is licensed under the GPL2, as it partly uses
+ * and includes pircbot code
+ * See http://www.jibble.org/licenses/gnu-license.php
+ * for more information
+ * 
+ */
 
 public class ircPluginListener extends PluginListener {
 	private ircPlugin ircp;

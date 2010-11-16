@@ -2,12 +2,12 @@
  * mbaxter's irc bot plugin for hey0's minecraft mod
  * long title, amazing results?
  *
- * An IRC Bot. This is not the plugin, it's the other half.
+ * This is the IRC Bot class
  * Handles messages from the channel and has the 
  * sendMessage command used by the plugin
  * 
  * NOTE 
- * This code is licensed under the GPL, as it partly uses
+ * This code is licensed under the GPL2, as it partly uses
  * and includes pircbot code
  * See http://www.jibble.org/licenses/gnu-license.php
  * for more information
