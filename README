@@ -1,0 +1,19 @@
+1) Place into your plugins directory
+
+2) Create irc.properties, add the config options (description in [], default in <>):
+irc-charlimit=<390>[maximum number of characters allowed in a irc-to-server message]
+irc-host=[IRC host to connect to]
+irc-name=<aMinecraftBot>[Nickname of your bot]
+irc-echo=<false>[Repeat back messages users in IRC send?]
+irc-separator=<<,>>[comma separated start and end for in-server username-surrounding for your irc users]
+irc-port=<6667>[port for the IRC host]
+irc-channel=<#minecraftbot>[Channel to join]
+irc-msg-enable=<false>[Require users to say !msg before messages sent to server]
+irc-usercolor=<f>[Color of IRC chatters to show up as in-game]
+irc-debug=<false>[Debug messages in console]
+
+3) Run your server
+
+4) Open ircAdmins.txt (the plugin will create it for you) and add users as it describes
+
+5) Say /ircrefresh in-game as an admin (give flag to others if you really want) to refresh the irc admin list
