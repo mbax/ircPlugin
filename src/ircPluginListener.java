@@ -19,6 +19,10 @@ public class ircPluginListener extends PluginListener {
             }
             ircp.doMsg("* "+ player.getName()+message);
     	}
+    	if(split[0].equalsIgnoreCase("/ircrefresh") && player.canUseCommand("/ircrefresh")){
+    		ircp.loadAdmins();
+    		player.sendMessage(Colors.Rose+"IRC admins reloaded");
+    	}
     	return false;
     }
     public void onLogin(Player player){
