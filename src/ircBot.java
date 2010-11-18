@@ -88,16 +88,18 @@ public class ircBot extends PircBot {
 				String damessage = etc.combineSplit(1, parts, " ");
 				doMsg(channel,sender,damessage);
 			}
-			else {
-				if(ircp.ircCommand(hostname, message.split(" "))){
-					sendMessage(sender,"Done :)");
-				}
-				else{
-					sendMessage(sender,"You don't have access to that command :(");
-				}
-			}
+			return;
 		}
-		else if (!ircMsg){
+		if(message.charAt(0)=='.') {
+			if(ircp.ircCommand(hostname, message.split(" "))){
+				sendMessage(sender,"Done :)");
+			}
+			else{
+				sendMessage(sender,"You don't have access to that command :(");
+			}
+			return;
+		}
+		if (!ircMsg){
 			doMsg(channel,sender,message);
 		}
 

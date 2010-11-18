@@ -29,7 +29,6 @@
 
 import java.io.*;
 import java.util.ArrayList;
-import java.util.Properties;
 import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -173,7 +172,7 @@ public class ircPlugin extends Plugin {
 				}
 			}
 		}
-		if(command[0].charAt(0)=='!'){
+		if(command[0].charAt(0)=='.'){
 			command[0]=command[0].substring(1);
 		}
 		if(lvl==0 || (lvl==2 && !(command[0].equalsIgnoreCase("kick") || command[0].equalsIgnoreCase("ban"))  )  ){
